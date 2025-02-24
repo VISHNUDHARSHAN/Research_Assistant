@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Research Assistant</title>
+    <link rel="stylesheet" href="sidepanel.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>Research Assistant</h2>
+        </div>
+
+        <div class="actions">
+            <label for="languageSelect">Choose Language:</label>
+            <select id="languageSelect">
+                <option value="english" selected>English</option>
+                <option value="tamil">Tamil</option>
+                <option value="hindi">Hindi</option>
+                <option value="spanish">Spanish</option>
+                <option value="french">French</option>
+                <option value="german">German</option>
+                <option value="chinese">Chinese</option>
+                <option value="japanese">Japanese</option>
+                <option value="korean">Korean</option>
+                <option value="arabic">Arabic</option>
+            </select>
+            <button id="summarizeBtn">Summarize</button>
+            <button id="suggestBtn">Suggest</button>
+        </div>
+
+        <div class="notes">
+            <h3>Research Notes</h3>
+            <textarea id="notes" placeholder="Take notes here"></textarea>
+            <button id="saveNotesBtn">Save Notes</button>
+        </div>
+
+        <div id="results">
+            <h3>Summarized Content</h3>
+            <div id="summarizeResults"></div>
+            <h3>Suggested Topics</h3>
+            <div id="suggestResults"></div>
+        </div>
+    </div>
+    <script src="sidepanel.js"></script>
+</body>
+</html>
